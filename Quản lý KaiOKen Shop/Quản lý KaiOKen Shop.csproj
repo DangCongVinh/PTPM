@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{096CB62E-E4E8-4FAB-B463-BAC392AF85EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quản_lý_KaiOKen_Shop</RootNamespace>
+    <AssemblyName>Quản lý KaiOKen Shop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.2" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2" />
+    <Reference Include="DevExpress.Printing.v17.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Thêm sản phẩm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Thêm sản phẩm.Designer.cs">
+      <DependentUpon>Admin_Thêm sản phẩm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danh sách nhân viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danh sách nhân viên.Designer.cs">
+      <DependentUpon>Danh sách nhân viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\CatarogryDAO.cs" />
+    <Compile Include="DAO\CHITIETHDDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HOADDONDAO.cs" />
+    <Compile Include="DAO\SanPhamTangKemDAO.cs" />
+    <Compile Include="DAO\ThongTinGiayDAO.cs" />
+    <Compile Include="fDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangKi.Designer.cs">
+      <DependentUpon>fDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPDaBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPDaBan.Designer.cs">
+      <DependentUpon>SPDaBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Catarogry.cs" />
+    <Compile Include="DTO\CHITIETHD.cs" />
+    <Compile Include="DTO\HOADON.cs" />
+    <Compile Include="DTO\ThongTinGiay.cs" />
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyKaiOKen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKaiOKen.Designer.cs">
+      <DependentUpon>QuanLyKaiOKen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quản lý loại giày.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản lý loại giày.Designer.cs">
+      <DependentUpon>Quản lý loại giày.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBill.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBills.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBills.Designer.cs">
+      <DependentUpon>ReportBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sản Phẩm Tặng Kèm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sản Phẩm Tặng Kèm.Designer.cs">
+      <DependentUpon>Sản Phẩm Tặng Kèm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thông tin Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thông tin Admin.Designer.cs">
+      <DependentUpon>Thông tin Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thông tin khách hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thông tin khách hàng.Designer.cs">
+      <DependentUpon>Thông tin khách hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thông tin nhân viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thông tin nhân viên.Designer.cs">
+      <DependentUpon>Thông tin nhân viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tinh hinh hoat dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tinh hinh hoat dong.Designer.cs">
+      <DependentUpon>Tinh hinh hoat dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Đặt hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đặt hàng.Designer.cs">
+      <DependentUpon>Đặt hàng.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Thêm sản phẩm.resx">
+      <DependentUpon>Admin_Thêm sản phẩm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danh sách nhân viên.resx">
+      <DependentUpon>Danh sách nhân viên.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangKi.resx">
+      <DependentUpon>fDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPDaBan.resx">
+      <DependentUpon>SPDaBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanLyKaiOKen.resx">
+      <DependentUpon>QuanLyKaiOKen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quản lý loại giày.resx">
+      <DependentUpon>Quản lý loại giày.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBills.resx">
+      <DependentUpon>ReportBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sản Phẩm Tặng Kèm.resx">
+      <DependentUpon>Sản Phẩm Tặng Kèm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thông tin Admin.resx">
+      <DependentUpon>Thông tin Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thông tin khách hàng.resx">
+      <DependentUpon>Thông tin khách hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thông tin nhân viên.resx">
+      <DependentUpon>Thông tin nhân viên.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tinh hinh hoat dong.resx">
+      <DependentUpon>Tinh hinh hoat dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Đặt hàng.resx">
+      <DependentUpon>Đặt hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinaz8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Administrator-Red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\social-facebook-box-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-go-home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-list-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email-Download-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-marker-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0620.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

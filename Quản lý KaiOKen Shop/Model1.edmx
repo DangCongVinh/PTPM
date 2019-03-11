@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QuanLyShopBanGiayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'QuanLyShopBanGiay.dbo.ReportBill' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ReportBill">
+          <Key>
+            <PropertyRef Name="ID_HD" />
+            <PropertyRef Name="NGAYTAO" />
+            <PropertyRef Name="USERNAME" />
+            <PropertyRef Name="ID_GIAY" />
+            <PropertyRef Name="TENLOAIGIAY" />
+            <PropertyRef Name="GIA" />
+            <PropertyRef Name="TONGTIEN" />
+          </Key>
+          <Property Name="ID_HD" Type="int" Nullable="false" />
+          <Property Name="NGAYTAO" Type="date" Nullable="false" />
+          <Property Name="USERNAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ID_GIAY" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TENLOAIGIAY" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="GIA" Type="bigint" Nullable="false" />
+          <Property Name="DISCOUNT" Type="int" />
+          <Property Name="TONGTIEN" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="QuanLyShopBanGiayModelStoreContainer">
+          <EntitySet Name="ReportBill" EntityType="Self.ReportBill" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[ReportBill].[ID_HD] AS [ID_HD], 
+[ReportBill].[NGAYTAO] AS [NGAYTAO], 
+[ReportBill].[USERNAME] AS [USERNAME], 
+[ReportBill].[ID_GIAY] AS [ID_GIAY], 
+[ReportBill].[TENLOAIGIAY] AS [TENLOAIGIAY], 
+[ReportBill].[GIA] AS [GIA], 
+[ReportBill].[DISCOUNT] AS [DISCOUNT], 
+[ReportBill].[TONGTIEN] AS [TONGTIEN]
+FROM [dbo].[ReportBill] AS [ReportBill]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QuanLyShopBanGiayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ReportBill">
+          <Key>
+            <PropertyRef Name="ID_HD" />
+            <PropertyRef Name="NGAYTAO" />
+            <PropertyRef Name="USERNAME" />
+            <PropertyRef Name="ID_GIAY" />
+            <PropertyRef Name="TENLOAIGIAY" />
+            <PropertyRef Name="GIA" />
+            <PropertyRef Name="TONGTIEN" />
+          </Key>
+          <Property Name="ID_HD" Type="Int32" Nullable="false" />
+          <Property Name="NGAYTAO" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="USERNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID_GIAY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TENLOAIGIAY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GIA" Type="Int64" Nullable="false" />
+          <Property Name="DISCOUNT" Type="Int32" />
+          <Property Name="TONGTIEN" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="QuanLyShopBanGiayEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ReportBill" EntityType="Self.ReportBill" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QuanLyShopBanGiayModelStoreContainer" CdmEntityContainer="QuanLyShopBanGiayEntities">
+          <EntitySetMapping Name="ReportBill">
+            <EntityTypeMapping TypeName="QuanLyShopBanGiayModel.ReportBill">
+              <MappingFragment StoreEntitySet="ReportBill">
+                <ScalarProperty Name="ID_HD" ColumnName="ID_HD" />
+                <ScalarProperty Name="NGAYTAO" ColumnName="NGAYTAO" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="ID_GIAY" ColumnName="ID_GIAY" />
+                <ScalarProperty Name="TENLOAIGIAY" ColumnName="TENLOAIGIAY" />
+                <ScalarProperty Name="GIA" ColumnName="GIA" />
+                <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+                <ScalarProperty Name="TONGTIEN" ColumnName="TONGTIEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
