@@ -23,28 +23,63 @@ namespace Quản_lý_KaiOKen_Shop
         //public int type;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //type = AccountDAO.Instance.Phanquyen(type);
+            ////type = AccountDAO.Instance.Phanquyen(type);
 
-            string userName = txbUsername.Text;
-            string passWord = txbPassword.Text;
-            Account LoginAccount = ACCOUNTDAO.Instance.Phanquyen(userName);
-            if (_Login(userName, passWord) == true)
+            //string userName = txbUsername.Text;
+            //string passWord = txbPassword.Text;
+            //Account LoginAccount = ACCOUNTDAO.Instance.Phanquyen(userName);
+            //if (_Login(userName, passWord) == true)
+            //{
+            //    this.Hide();
+            //    fMain f = new fMain(LoginAccount);
+            //    //MessageBox.Show("" + AccountDAO.Instance._Login(userName,passWord).Rows[0][2].ToString());
+            //    f.ShowDialog();
+            //    this.Close();
+
+            //}
+            //else
+            //{
+            //    lblSai.Text = "Sai thông tin đăng nhập";
+            //    //MessageBox.Show("Sai thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            //    txbUsername.Text = "";
+            //    txbPassword.Text = "";
+            //    txbUsername.Focus();
+            //}
+
+
+            try
             {
-                this.Hide();
-                fMain f = new fMain(LoginAccount);
-                //MessageBox.Show("" + AccountDAO.Instance._Login(userName,passWord).Rows[0][2].ToString());
-                f.ShowDialog();
-                this.Close();
-                
+                String userName = txbUsername.Text;
+                String passWord = txbPassword.Text;
+
+                Account LoginAccount = ACCOUNTDAO.Instance.Phanquyen(userName);
+
+
+                if (txbUsername.TextLength == 0)
+                    MessageBox.Show("Vui lòng nhập tài khoản", "Thông báo");
+                else
+                if (txbPassword.TextLength == 0)
+                    MessageBox.Show("Vui lòng nhập nhập mật khẩu", "Thông báo");
+                else
+                if (_Login(userName, passWord) == true)
+                {
+
+                    this.Hide();
+                    fMain ss = new fMain(LoginAccount);
+                    ss.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu");
+                }
             }
-            else
+            catch (Exception)
             {
-                lblSai.Text = "Sai thông tin đăng nhập";
-                //MessageBox.Show("Sai thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                txbUsername.Text = "";
-                txbPassword.Text = "";
-                txbUsername.Focus();
+                MessageBox.Show("HACK ÀK");
             }
+
+
+
         }
 
         bool _Login(string userName, string passWord)

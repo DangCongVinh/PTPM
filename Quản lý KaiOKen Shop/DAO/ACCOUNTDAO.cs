@@ -19,17 +19,24 @@ namespace Quản_lý_KaiOKen_Shop.DAO
         }
         private ACCOUNTDAO() { }
         public int type;
+
         public bool _Login(string userName, string passWord)
         {
-            string query = "select username, password, type from Account where UserName=N'"+ userName + "' and Password = N'" + passWord + "'";
+            //string query = "select username, password, type from Account where UserName=N'"+ userName + "' and Password = N'" + passWord + "'";
 
+            //DataTable datatb = DataProvider.Instance.ExecuteQuery(query);
+            //    foreach (DataRow item in datatb.Rows){
+            //        type = Convert.ToInt32(item["type"]);
+            //    }
+            //        return datatb.Rows.Count>0;     // trả về true là > 0
+            string query = "USP_LOGIN @username='" + userName + "', @password='" + passWord + "'";
             DataTable datatb = DataProvider.Instance.ExecuteQuery(query);
-            foreach (DataRow item in datatb.Rows)
-            {
-                type = Convert.ToInt32(item["type"]);
-            }
-            return datatb.Rows.Count>0;     // trả về true là > 0
+           
+            return datatb.Rows.Count > 0;
+
         }
+
+
         public Account Phanquyen(string username)// lấy ra account theo username
         {
             string query = "select*from account where username =N'"+username+"'";
