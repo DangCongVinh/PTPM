@@ -33,5 +33,10 @@ namespace Quản_lý_KaiOKen_Shop
         {
             Close();
         }
+
+        private void fThongTinAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

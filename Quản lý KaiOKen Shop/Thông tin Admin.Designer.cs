@@ -81,7 +81,7 @@
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
             this.hyperlinkLabelControl1.Size = new System.Drawing.Size(147, 13);
             this.hyperlinkLabelControl1.TabIndex = 27;
-            this.hyperlinkLabelControl1.Text = "http://facebook.com/trandung";
+            this.hyperlinkLabelControl1.Text = "https://www.facebook.com/congvinh2997";
             // 
             // labelControl3
             // 
@@ -130,7 +130,7 @@
             this.hyperlinkLabelControl2.Name = "hyperlinkLabelControl2";
             this.hyperlinkLabelControl2.Size = new System.Drawing.Size(131, 13);
             this.hyperlinkLabelControl2.TabIndex = 33;
-            this.hyperlinkLabelControl2.Text = "dungtran9x225@gmail.com";
+            this.hyperlinkLabelControl2.Text = "dangcongvinh415560@gmail.com";
             // 
             // btnExit
             // 
@@ -150,10 +150,11 @@
             this.pictureEdit1.EditValue = global::Quản_lý_KaiOKen_Shop.Properties.Resources.t1;
             this.pictureEdit1.Location = new System.Drawing.Point(241, 12);
             this.pictureEdit1.Name = "pictureEdit1";
+            // 
+            // 
+            // 
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Properties.ZoomPercent = 40D;
-            this.pictureEdit1.Size = new System.Drawing.Size(100, 96);
             this.pictureEdit1.TabIndex = 36;
             // 
             // fThongTinAdmin
@@ -178,6 +179,7 @@
             this.Name = "fThongTinAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin Admin";
+            this.Load += new System.EventHandler(this.fThongTinAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
