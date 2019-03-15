@@ -29,10 +29,13 @@ namespace Quản_lý_KaiOKen_Shop.DAO
             //        type = Convert.ToInt32(item["type"]);
             //    }
             //        return datatb.Rows.Count>0;     // trả về true là > 0
-            string query = "USP_LOGIN @username='" + userName + "', @password='" + passWord + "'";
+            string query = "select * from  Account where UserName=N'" + userName + "' and Password = N'" + passWord + "'";
+            
             DataTable datatb = DataProvider.Instance.ExecuteQuery(query);
-           
-            return datatb.Rows.Count > 0;
+            if (query.Count() > 0 && datatb.Rows.Count >0)
+            {
+                return true; }
+            else return false;
 
         }
 
