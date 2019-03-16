@@ -27,6 +27,7 @@ namespace Quản_lý_KaiOKen_Shop
         }
         public void _LoadDSNV()
         {
+            //show NV
             string query = "select displayname as [Tên], sodienthoai as [SDT], ca as [Ca làm], type as [Nhân viên] from Account where type = 0";
             dgvThongTinNhanVien.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }

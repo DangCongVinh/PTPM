@@ -1,0 +1,23 @@
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\bin\Debug\Quản lý KaiOKen Shop.exe.config
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csprojAssemblyReference.cache
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fAdmin_Thêm_sản_phẩm.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDanhSachNhanVien.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDangKi.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDaBan.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fMain.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fLogin.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.Properties.Resources.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fQuanLyKaiOKen.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fQuanlyloaigiay.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.ReportBills.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fSPTK.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongKe.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinAdmin.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinKhachHang.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinNhanVien.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fTinhhinhHD.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDatHang.resources
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csproj.GenerateResource.cache
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.exe.licenses
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csproj.CoreCompileInputs.cache
+D:\ProjectNo1\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csprojResolveAssemblyReference.cache

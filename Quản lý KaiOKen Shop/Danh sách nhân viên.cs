@@ -58,8 +58,7 @@ namespace Quản_lý_KaiOKen_Shop
             try
             {
                 if (ACCOUNTDAO.Instance.InsertAccount(displayname, username, password, ca, type, sodienthoai) == true && username !="")
-                {
-                    //;
+                {                  
                     MessageBox.Show("Thêm tài khoản thành công");
                     lvsDanhSachNV.Items.Clear();
                     LoadDanhSachNV();
@@ -79,12 +78,14 @@ namespace Quản_lý_KaiOKen_Shop
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;
+           
             if (MessageBox.Show("Bạn có thực sự muốn xóa " + username + ", có thể sẽ mất rất nhiều dữ liệu liên quan đến hóa đơn?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 if (lvsDanhSachNV.SelectedItems.Count > 0)
                 {
                     //string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;
                     //MessageBox.Show(lvsDanhSachNV.SelectedItems[0].SubItems[1].Text);
+                    
                     txbUsername.ReadOnly = true;
                     if (ACCOUNTDAO.Instance.DeleteAccount(username) == true)
                     {
