@@ -78,24 +78,32 @@ namespace Quản_lý_KaiOKen_Shop
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;
-           
-            if (MessageBox.Show("Bạn có thực sự muốn xóa " + username + ", có thể sẽ mất rất nhiều dữ liệu liên quan đến hóa đơn?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if(username == "")
             {
-                if (lvsDanhSachNV.SelectedItems.Count > 0)
+                MessageBox.Show("Vui lòng chọn 1 tài khoản để xóa", "Thông báo", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                if (MessageBox.Show("Bạn có thực sự muốn xóa " + username + ", có thể sẽ mất rất nhiều dữ liệu liên quan đến hóa đơn?", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    //string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;
-                    //MessageBox.Show(lvsDanhSachNV.SelectedItems[0].SubItems[1].Text);
-                    
-                    txbUsername.ReadOnly = true;
-                    if (ACCOUNTDAO.Instance.DeleteAccount(username) == true)
+                    if (lvsDanhSachNV.SelectedItems.Count > 0)
                     {
-                        MessageBox.Show("Xóa tài khoản thành công");
-                        lvsDanhSachNV.Items.Clear();
-                        LoadDanhSachNV();
-                        Xoatrang();
+                        //string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;
+                        //MessageBox.Show(lvsDanhSachNV.SelectedItems[0].SubItems[1].Text);
+
+                        txbUsername.ReadOnly = true;
+                        if (ACCOUNTDAO.Instance.DeleteAccount(username) == true)
+                        {
+                            MessageBox.Show("Xóa tài khoản thành công");
+                            lvsDanhSachNV.Items.Clear();
+                            LoadDanhSachNV();
+                            Xoatrang();
+                        }
                     }
                 }
             }
+            
             //if (lvsDanhSachNV.SelectedItems.Count > 0)
             //{
             //    string username = lvsDanhSachNV.SelectedItems[0].SubItems[1].Text;

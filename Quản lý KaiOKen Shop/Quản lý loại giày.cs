@@ -92,7 +92,7 @@ namespace Quản_lý_KaiOKen_Shop
         public void Xoatrang() { txbTenLoaigiay.Text = ""; }
         private void btnXoaTrang_Click(object sender, EventArgs e)
         {
-            Xoatrang();
+            Xoatrang();//
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
