@@ -98,20 +98,28 @@ namespace Quản_lý_KaiOKen_Shop
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string tenloaigiay = lvsLoaiGiay.SelectedItems[0].SubItems[1].Text;
-            if (MessageBox.Show("Bạn có muốn xóa " + tenloaigiay + " không, có thể bạn sẽ mất dữ liệu ở hóa đơn và chi tiết hóa đơn", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if(lvsLoaiGiay.SelectedItems.Count <=0)
             {
-                if (lvsLoaiGiay.SelectedItems.Count > 0)
+                MessageBox.Show("Vui lòng chọn 1 loại giày để xóa", "Thông báo", MessageBoxButtons.OK);
+            }
+            else
+            {
+                if (MessageBox.Show("Bạn có muốn xóa " + tenloaigiay + " không, có thể bạn sẽ mất dữ liệu ở hóa đơn và chi tiết hóa đơn", "Thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-
-                    if (CatarogryDAO.Instance.DeleteLoaiGiay(tenloaigiay) == true)
+                    if (lvsLoaiGiay.SelectedItems.Count > 0)
                     {
-                        lblThongbao.Text = "Xóa " + tenloaigiay + " thành công";
-                        lvsLoaiGiay.Items.Clear();
-                        LoadLoaiGiay();
-                        Xoatrang();
+
+                        if (CatarogryDAO.Instance.DeleteLoaiGiay(tenloaigiay) == true)
+                        {
+                            lblThongbao.Text = "Xóa " + tenloaigiay + " thành công";
+                            lvsLoaiGiay.Items.Clear();
+                            LoadLoaiGiay();
+                            Xoatrang();
+                        }
                     }
                 }
             }
+            
 
             //try
             //{
