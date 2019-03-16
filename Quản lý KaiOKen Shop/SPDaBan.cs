@@ -29,11 +29,13 @@ namespace Quản_lý_KaiOKen_Shop
             DataTable datatb = THONGTINGIAYDAO.Instance.SPDaBan();//lấy danh sách các sản phẩm đã bán
             for (int i = 0; i < datatb.Rows.Count; i++)
             {//load lên listview
+                // lấy data ra
                 ListViewItem lvs = lvsSPDB.Items.Add(datatb.Rows[i][0].ToString());
                 lvs.SubItems.Add(datatb.Rows[i][1].ToString());
                 lvs.SubItems.Add(datatb.Rows[i][2].ToString());
                 lvs.SubItems.Add(datatb.Rows[i][3].ToString());
                 lvs.SubItems.Add(datatb.Rows[i][4].ToString());
+                // đổ dữ liệu vào 
             }
         }
 
