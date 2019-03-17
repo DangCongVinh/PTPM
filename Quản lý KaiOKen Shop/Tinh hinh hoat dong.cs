@@ -44,10 +44,12 @@ namespace Quản_lý_KaiOKen_Shop
             lblCTHDDM.Text = DateTime.Now.ToShortDateString();
         }
         public void LoadDSHD()
-        {
-            int month = (int)numThang.Value;
+        {//tìm danh sách hóa đơn theo ngày/tháng/năm
+            int month = (int)numThang.Value; 
             //string ngaymua = datePicker.Value.ToString();
-            DataTable datatb = HOADDONDAO.Instance.LoadDSHD(month);//ngaymua
+            int day = (int)numNgay.Value;//xem theo ngày
+            int year = (int)numNam.Value;
+            DataTable datatb = HOADDONDAO.Instance.LoadDSHD(day,month,year);//ngaymua
             for (int i = 0; i < datatb.Rows.Count; i++)
             {
                 ListViewItem lvs = lvsHD.Items.Add(datatb.Rows[i][0].ToString());
