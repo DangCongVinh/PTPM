@@ -188,7 +188,7 @@ namespace Quản_lý_KaiOKen_Shop
 
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Process.Start("https://www.google.com/maps/place/%C4%90%E1%BA%A1i+h%E1%BB%8Dc+C%C3%B4ng+ngh%E1%BB%87+TP.HCM+(HUTECH)/@10.8019077,106.7130572,16z/data=!4m5!3m4!1s0x317528a459cb43ab:0x6c3d29d370b52a7e!8m2!3d10.801839!4d106.7148466");
+            Process.Start("https://www.google.com/maps/place/Hutech/@10.8561423,106.7828657,17z/data=!3m1!4b1!4m5!3m4!1s0x3175276e6385bd87:0x4911cb0a6db60f3b!8m2!3d10.856137!4d106.7850544?hl=vi-VN");
         }
 
         private void fMain_Load(object sender, EventArgs e)
