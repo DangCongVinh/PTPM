@@ -44,9 +44,9 @@ namespace Quản_lý_KaiOKen_Shop.DAO
         }
 
         public DataTable SPDaBan()
-        {
+        {//xem các sản phẩm đã bán
             DataTable datatb = new DataTable();
-            string query = "SELECT B.ID_GIAY,TenSanPham,TenLoaiGiay,NGAYTAO,Gia FROM HOADON A, CHITIETHOADON B, THONGTINGIAY C, Catarogry D WHERE A.ID_HD = B.ID_HD AND B.ID_GIAY = C.ID_Giay AND C.ID_LoaiGiay = D.ID_LoaiGiay AND Status = 1 AND b.ID_Giay <> 'Không'";
+            string query = "SELECT B.ID_GIAY,TenSanPham,TenLoaiGiay,CONVERT(nvarchar(10),NGAYTAO,103),Gia FROM HOADON A, CHITIETHOADON B, THONGTINGIAY C, Catarogry D WHERE A.ID_HD = B.ID_HD AND B.ID_GIAY = C.ID_Giay AND C.ID_LoaiGiay = D.ID_LoaiGiay AND Status = 1 AND b.ID_Giay <> 'Không'";
             datatb = DataProvider.Instance.ExecuteQuery(query);
             return datatb;
         }

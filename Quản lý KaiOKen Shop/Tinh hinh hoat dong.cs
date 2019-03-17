@@ -44,10 +44,12 @@ namespace Quản_lý_KaiOKen_Shop
             lblCTHDDM.Text = DateTime.Now.ToShortDateString();
         }
         public void LoadDSHD()
-        {
-            int month = (int)numThang.Value;
+        {//tìm danh sách hóa đơn theo ngày/tháng/năm
+            int month = (int)numThang.Value; 
             //string ngaymua = datePicker.Value.ToString();
-            DataTable datatb = HOADDONDAO.Instance.LoadDSHD(month);//ngaymua
+            int day = (int)numNgay.Value;//xem theo ngày
+            int year = (int)numNam.Value;
+            DataTable datatb = HOADDONDAO.Instance.LoadDSHD(day,month,year);//ngaymua
             for (int i = 0; i < datatb.Rows.Count; i++)
             {
                 ListViewItem lvs = lvsHD.Items.Add(datatb.Rows[i][0].ToString());
@@ -61,7 +63,7 @@ namespace Quản_lý_KaiOKen_Shop
             lvsDTMonth.Items.Clear();
             int month =  (int)numThang.Value;
             int year = (int)numNam.Value;
-            ListViewItem lvs = lvsDTMonth.Items.Add(HOADDONDAO.Instance.DoanhThuThang(month, year).Rows[0].ItemArray[0].ToString() + "đ");
+            ListViewItem lvs = lvsDTMonth.Items.Add(string.Format("{0:n0}", HOADDONDAO.Instance.DoanhThuThang(month, year).Rows[0].ItemArray[0].ToString())  + "đ");
             
         }
 
@@ -72,7 +74,7 @@ namespace Quản_lý_KaiOKen_Shop
             int day = (int)numNgay.Value;
             int year = (int)numNam.Value;
             //MessageBox.Show("" + day + month + year);
-            ListViewItem lvs = lvsDTDay.Items.Add(HOADDONDAO.Instance.DoanhThuDay(month, day, year).Rows[0].ItemArray[0].ToString() + "đ");
+            ListViewItem lvs = lvsDTDay.Items.Add(string.Format("{0:n0}", HOADDONDAO.Instance.DoanhThuDay(month, day, year).Rows[0].ItemArray[0].ToString()) + "đ");
         }
 
         public void LoadMaxLG()

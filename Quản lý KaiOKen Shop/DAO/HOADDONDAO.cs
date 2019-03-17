@@ -27,9 +27,9 @@ namespace Quản_lý_KaiOKen_Shop.DAO
         //    int result = DataProvider.Instance.ExecuteNonQuery(query);
         //    return result > 0;
         //}
-        public DataTable LoadDSHD(int month)//string ngaymua
+        public DataTable LoadDSHD(int day, int month, int year)//string ngaymua
         {
-            string query = "SELECT ID_HD,NGAYTAO,TONGTIEN,DISPLAYNAME FROM HOADON A, Account B WHERE A.USERNAME = B.UserName AND MONTH(NGAYTAO)="+month+"";//where ngaymua='"+ngaymua+"'
+            string query = "SELECT ID_HD,Convert(nvarchar(10),NGAYTAO,103),TONGTIEN,DISPLAYNAME FROM HOADON A, Account B WHERE A.USERNAME = B.UserName AND day(ngaytao) = "+day+" and MONTH(NGAYTAO)="+month+ " and year(ngaytao) = "+year;//where ngaymua='"+ngaymua+"'
             DataTable datatb = DataProvider.Instance.ExecuteQuery(query);
             return datatb;
         }
