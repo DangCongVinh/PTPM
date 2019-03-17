@@ -204,3 +204,30 @@ C:\Users\Phuong\Documents\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản l
 C:\Users\Phuong\Documents\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csproj.CoreCompileInputs.cache
 C:\Users\Phuong\Documents\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.exe
 C:\Users\Phuong\Documents\GitHub\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.pdb
+E:\PTPM\Quản lý KaiOKen Shop\bin\Debug\Quản lý KaiOKen Shop.exe.config
+E:\PTPM\Quản lý KaiOKen Shop\bin\Debug\Quản lý KaiOKen Shop.exe
+E:\PTPM\Quản lý KaiOKen Shop\bin\Debug\Quản lý KaiOKen Shop.pdb
+E:\PTPM\Quản lý KaiOKen Shop\bin\Debug\EntityFramework.dll
+E:\PTPM\Quản lý KaiOKen Shop\bin\Debug\EntityFramework.xml
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csprojResolveAssemblyReference.cache
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fAdmin_Thêm_sản_phẩm.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDanhSachNhanVien.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDangKi.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDaBan.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fMain.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fLogin.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.Properties.Resources.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fQuanLyKaiOKen.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fQuanlyloaigiay.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.ReportBills.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fSPTK.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongKe.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinAdmin.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinKhachHang.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fThongTinNhanVien.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fTinhhinhHD.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản_lý_KaiOKen_Shop.fDatHang.resources
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\KaiOKen Shop.csproj.GenerateResource.Cache
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.exe.licenses
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.exe
+E:\PTPM\Quản lý KaiOKen Shop\obj\Debug\Quản lý KaiOKen Shop.pdb
